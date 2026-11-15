@@ -10,7 +10,9 @@ You get **one definitive character**, plus three "layers": your **core**, **stre
 |---|---|
 | `quiz-data.json` | **All quiz content**: questions, answer→trait signals, Q40 themes, 20 traits, 18 character profiles, and scoring weights. Edit this to change the quiz. |
 | `app.js` | Quiz flow and scoring (follows `docs/SCORING.md` exactly). |
-| `index.html`, `style.css` | Page and the painted-sky theme. |
+| `index.html`, `style.css` | Page and the painted-sky theme (includes link-preview tags). |
+| `emblems.js` | Original round emblem art for each character, shown on the results page. |
+| `og-image.png` | Link-preview image. Edit `tools/og-image.html`, then regenerate with `node tools/render-og.js`. |
 | `docs/QUESTIONS.md` | Readable list of all questions and answers. |
 | `docs/SCORING.md` | Full scoring specification, every answer mapping and character vector. |
 

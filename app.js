@@ -234,7 +234,7 @@
   }
 
   function layer(icon, title, ch) {
-    return `<div class="layer"><p class="tag">${icon} ${title}</p><h3>${esc(ch.name)}</h3><p class="film">${esc(ch.film)}</p><p>${esc(ch.summary)}</p></div>`;
+    return `<div class="layer">${window.emblemSVG(ch.id, 64)}<div><p class="tag">${icon} ${title}</p><h3>${esc(ch.name)}</h3><p class="film">${esc(ch.film)}</p><p>${esc(ch.summary)}</p></div></div>`;
   }
 
   function renderResults() {
@@ -245,6 +245,7 @@
     render(`
       <section class="result">
         <p class="eyebrow">The wind whispers that you are…</p>
+        <div class="hero-emblem">${window.emblemSVG(best.id, 132)}</div>
         <h1>${esc(best.name)}</h1>
         <p class="film">${esc(best.film)}</p>
         <p class="desc">${esc(best.summary)}</p>
@@ -265,7 +266,7 @@
       </div>
 
       <details class="method"><summary>Other close matches</summary>
-        <ol>${r.top.slice(1).map((c) => `<li><strong>${esc(c.name)}</strong>, ${esc(c.film)}</li>`).join("")}</ol>
+        <ol>${r.top.slice(1).map((c) => `<li>${window.emblemSVG(c.id, 32)}<span><strong>${esc(c.name)}</strong>, ${esc(c.film)}</span></li>`).join("")}</ol>
         <p class="micro">Results can be close; picking one definitive character is part of the scoring rule.</p>
       </details>
       <details class="method"><summary>How this result was calculated</summary>
