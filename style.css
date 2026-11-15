@@ -1,58 +1,244 @@
+/* ── Palette: watercolor daytime sky; twilight in dark mode ── */
 :root {
-  --bg: #f4f1e8;
-  --card: #fffdf7;
-  --ink: #2d3a2e;
-  --muted: #6b7a6c;
-  --accent: #4f7a5a;
-  --accent-ink: #fff;
-  --line: #d9d3c2;
+  --sky-top: #8ec5e6;
+  --sky-mid: #c4e3ee;
+  --sky-low: #fbeed3;
+  --sun: #fff4c9;
+  --sun-glow: rgba(255, 230, 160, .65);
+  --cloud: #ffffff;
+  --hill-far: #a9cfa0;
+  --hill-mid: #7fb47c;
+  --hill-near: #5c9a63;
+  --mote: rgba(255, 252, 230, .95);
+
+  --paper: #fffaf0;
+  --paper-edge: #efe2c6;
+  --ink: #3a3326;
+  --muted: #7d705a;
+  --accent: #d9734e;      /* warm terracotta roof-tile */
+  --accent-deep: #b85a38;
+  --accent-ink: #fffaf0;
+  --leaf: #6ea46b;
+  --answer: #fffdf7;
+  --answer-hover: #fff1dc;
+  --shadow: 0 2px 0 var(--paper-edge), 0 18px 40px -18px rgba(70, 60, 30, .45);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1b211c;
-    --card: #242c25;
-    --ink: #e8eadf;
-    --muted: #a3ad9f;
-    --accent: #8fbf98;
-    --accent-ink: #13180f;
-    --line: #3a453b;
+    --sky-top: #1c2348;
+    --sky-mid: #3b3f73;
+    --sky-low: #a86f7d;
+    --sun: #f6f0d6;
+    --sun-glow: rgba(240, 235, 200, .35);
+    --cloud: #8d8fb8;
+    --hill-far: #3d5a59;
+    --hill-mid: #2c4744;
+    --hill-near: #1f3532;
+    --mote: rgba(220, 255, 150, .95); /* fireflies */
+
+    --paper: #2b2a3d;
+    --paper-edge: #1d1c2b;
+    --ink: #f1ead8;
+    --muted: #b9b1c9;
+    --accent: #f0a06e;
+    --accent-deep: #d9824f;
+    --accent-ink: #231f2e;
+    --leaf: #9bcf91;
+    --answer: #34334a;
+    --answer-hover: #3f3d58;
+    --shadow: 0 2px 0 var(--paper-edge), 0 18px 40px -18px rgba(0, 0, 0, .7);
   }
 }
+
 * { box-sizing: border-box; }
+html { min-height: 100%; }
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--bg);
   color: var(--ink);
-  font: 17px/1.55 Georgia, "Iowan Old Style", serif;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 45%, var(--sky-low) 100%) fixed;
+  background-color: var(--sky-mid);
+  font: 18px/1.6 "Fraunces", Georgia, serif;
   display: flex;
   justify-content: center;
-  padding: 48px 16px;
+  align-items: flex-start;
+  padding: 7vh 16px 160px;
+  overflow-x: hidden;
 }
-main { width: 100%; max-width: 560px; }
-h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
-h2 { font-size: 1.35rem; line-height: 1.3; margin: 8px 0 20px; }
-.intro, .count, .film { color: var(--muted); }
-.count { font-size: .9rem; margin: 0; }
+
+/* ── Scenery ── */
+.scenery { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+
+.sun {
+  position: absolute; top: 9%; right: 12%;
+  width: 110px; height: 110px; border-radius: 50%;
+  background: var(--sun);
+  box-shadow: 0 0 60px 30px var(--sun-glow), 0 0 140px 80px var(--sun-glow);
+}
+.stars { display: none; }
+@media (prefers-color-scheme: dark) {
+  .sun { width: 80px; height: 80px; box-shadow: inset -18px -6px 0 0 rgba(0,0,0,.08), 0 0 50px 18px var(--sun-glow); }
+  .stars {
+    display: block; position: absolute; inset: 0 0 40% 0;
+    background-image:
+      radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 42% 26%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 58% 12%, #fff 50%, transparent 51%),
+      radial-gradient(2px 2px at 70% 30%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 84% 6%, #fff 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 92% 22%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 6% 34%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 35% 40%, #fff 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 78% 44%, #fff 50%, transparent 51%);
+    animation: twinkle 4s ease-in-out infinite alternate;
+  }
+}
+
+/* Puffy clouds built from overlapping circles */
+.cloud {
+  position: absolute; left: -260px;
+  width: 200px; height: 60px;
+  background: var(--cloud); border-radius: 60px;
+  opacity: .9; filter: blur(.4px);
+  animation: drift linear infinite;
+}
+.cloud::before, .cloud::after {
+  content: ""; position: absolute; background: var(--cloud); border-radius: 50%;
+}
+.cloud::before { width: 90px; height: 90px; top: -45px; left: 30px; }
+.cloud::after  { width: 120px; height: 120px; top: -70px; left: 80px; }
+.c1 { top: 14%; transform: scale(1.1); animation-duration: 95s; animation-delay: -20s; }
+.c2 { top: 32%; transform: scale(.7);  animation-duration: 130s; animation-delay: -80s; opacity: .75; }
+.c3 { top: 6%;  transform: scale(.55); animation-duration: 160s; animation-delay: -40s; opacity: .7; }
+.c4 { top: 46%; transform: scale(.9);  animation-duration: 115s; animation-delay: -100s; opacity: .6; }
+
+.hills { position: absolute; bottom: 0; left: 0; width: 100%; height: 34vh; min-height: 180px; }
+.hill-far  { fill: var(--hill-far); }
+.hill-mid  { fill: var(--hill-mid); }
+.hill-near { fill: var(--hill-near); }
+
+/* Floating motes (daylight dandelion fluff / night fireflies) — positions set in JS */
+.motes span {
+  position: absolute; bottom: -10px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--mote);
+  box-shadow: 0 0 8px 2px var(--mote);
+  opacity: 0;
+  animation: float-up linear infinite;
+}
+
+/* ── Card ── */
+main {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 580px;
+  background: var(--paper);
+  border-radius: 28px 34px 26px 32px / 32px 26px 34px 28px; /* slightly hand-cut */
+  box-shadow: var(--shadow);
+  padding: 36px 32px 32px;
+}
+main::before { /* little leaf sprig tucked on the corner */
+  content: "🍃"; position: absolute; top: -18px; left: 22px; font-size: 30px;
+  transform: rotate(-20deg); animation: sway 5s ease-in-out infinite;
+}
+.screen { animation: bloom .5s cubic-bezier(.2, .8, .3, 1.2) both; }
+
+h1, h2 { font-weight: 600; letter-spacing: -.01em; }
+h1 { font-size: clamp(1.9rem, 6vw, 2.5rem); line-height: 1.15; margin: 0 0 14px; }
+h2 { font-size: clamp(1.3rem, 4.5vw, 1.55rem); line-height: 1.3; margin: 6px 0 22px; }
+.intro { color: var(--muted); font-style: italic; margin: 0 0 26px; }
+.count, .film, .eyebrow {
+  font-family: "Patrick Hand", "Comic Sans MS", cursive;
+  color: var(--muted); font-size: 1.1rem; margin: 0; letter-spacing: .02em;
+}
+.film { color: var(--leaf); font-size: 1.2rem; margin-bottom: 14px; }
+
+/* ── Buttons ── */
 button {
-  font: inherit;
-  cursor: pointer;
-  border-radius: 12px;
-  padding: 14px 18px;
-  border: 1px solid var(--line);
+  font: inherit; cursor: pointer; color: inherit;
+  border: none; border-radius: 999px; padding: 14px 24px;
+  transition: transform .2s cubic-bezier(.3, 1.6, .5, 1), background .2s, box-shadow .2s;
 }
-.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-.secondary { background: transparent; color: var(--ink); }
-.answers { display: grid; gap: 10px; }
+button:focus-visible { outline: 3px dashed var(--accent); outline-offset: 3px; }
+.primary {
+  background: var(--accent); color: var(--accent-ink);
+  font-family: "Patrick Hand", cursive; font-size: 1.3rem; padding: 12px 30px;
+  box-shadow: 0 4px 0 var(--accent-deep);
+}
+.primary:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: 0 7px 0 var(--accent-deep); }
+.primary:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--accent-deep); }
+.secondary {
+  background: transparent; font-family: "Patrick Hand", cursive; font-size: 1.3rem;
+  box-shadow: inset 0 0 0 2px var(--paper-edge);
+}
+.secondary:hover { transform: translateY(-2px) rotate(1deg); }
+
+.answers { display: grid; gap: 12px; }
 .answer {
-  text-align: left;
-  background: var(--card);
-  color: var(--ink);
-  transition: border-color .15s, transform .15s;
+  text-align: left; background: var(--answer);
+  border-radius: 20px 24px 18px 22px;
+  box-shadow: 0 0 0 2px var(--paper-edge), 0 3px 0 2px var(--paper-edge);
+  padding: 15px 20px 15px 48px; position: relative;
+  animation: bloom .45s cubic-bezier(.2, .8, .3, 1.2) both;
 }
-.answer:hover, .answer:focus-visible { border-color: var(--accent); transform: translateY(-1px); }
-.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
-.bar { height: 100%; background: var(--accent); transition: width .25s; }
-.result { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 16px; }
-.result img { width: 100%; border-radius: 12px; margin: 8px 0; }
-.row { display: flex; gap: 10px; }
+.answer::before { /* small seed bullet that sprouts on hover */
+  content: "•"; position: absolute; left: 20px; top: 50%; transform: translateY(-52%);
+  color: var(--leaf); font-size: 1.6rem; transition: transform .25s;
+}
+.answer:hover, .answer:focus-visible { background: var(--answer-hover); transform: translateY(-2px) rotate(-.4deg); }
+.answer:hover::before, .answer:focus-visible::before { content: "🌱"; font-size: 1rem; transform: translateY(-55%) scale(1.15); }
+.answer:nth-child(2) { animation-delay: .06s; }
+.answer:nth-child(3) { animation-delay: .12s; }
+.answer:nth-child(4) { animation-delay: .18s; }
+.answer:nth-child(5) { animation-delay: .24s; }
+
+/* ── Progress: a little vine that grows ── */
+.progress {
+  height: 10px; background: var(--paper-edge); border-radius: 99px;
+  margin-bottom: 18px; position: relative;
+}
+.bar {
+  height: 100%; border-radius: 99px; position: relative;
+  background: repeating-linear-gradient(90deg, var(--leaf) 0 14px, color-mix(in srgb, var(--leaf) 80%, #fff) 14px 18px);
+  transition: width .6s cubic-bezier(.3, 1.4, .5, 1);
+}
+.bar::after { content: "🌼"; position: absolute; right: -10px; top: 50%; transform: translateY(-55%); font-size: 18px; }
+
+/* ── Result ── */
+.result { text-align: center; }
+.result h1 { font-size: clamp(2.4rem, 9vw, 3.4rem); margin: 4px 0 2px; }
+.result img { width: 100%; border-radius: 20px; margin: 10px 0 16px; }
+.result .desc { text-align: left; margin: 0 0 26px; }
+.row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.sparkle {
+  position: fixed; z-index: 2; pointer-events: none; font-size: 20px;
+  animation: sparkle 1.6s ease-out forwards;
+}
+
+/* ── Motion ── */
+@keyframes drift   { to { left: 110%; } }
+@keyframes twinkle { from { opacity: .55; } to { opacity: 1; } }
+@keyframes sway    { 0%, 100% { transform: rotate(-20deg); } 50% { transform: rotate(-5deg); } }
+@keyframes bloom   { from { opacity: 0; transform: translateY(12px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes float-up {
+  0%   { transform: translate(0, 0); opacity: 0; }
+  10%  { opacity: .9; }
+  50%  { transform: translate(30px, -50vh); }
+  90%  { opacity: .8; }
+  100% { transform: translate(-20px, -100vh); opacity: 0; }
+}
+@keyframes sparkle {
+  0%   { transform: translate(0, 0) scale(.4) rotate(0); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(1.1) rotate(200deg); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .cloud { left: var(--rest, 10%); }
+  .c1 { --rest: 8%; } .c2 { --rest: 60%; } .c3 { --rest: 35%; } .c4 { --rest: 75%; }
+}
+
+@media (max-width: 480px) {
+  body { padding-top: 5vh; font-size: 17px; }
+  main { padding: 30px 20px 24px; }
+  .sun { width: 70px; height: 70px; top: 5%; right: 8%; }
+}
