@@ -1,0 +1,58 @@
+:root {
+  --bg: #f4f1e8;
+  --card: #fffdf7;
+  --ink: #2d3a2e;
+  --muted: #6b7a6c;
+  --accent: #4f7a5a;
+  --accent-ink: #fff;
+  --line: #d9d3c2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b211c;
+    --card: #242c25;
+    --ink: #e8eadf;
+    --muted: #a3ad9f;
+    --accent: #8fbf98;
+    --accent-ink: #13180f;
+    --line: #3a453b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 Georgia, "Iowan Old Style", serif;
+  display: flex;
+  justify-content: center;
+  padding: 48px 16px;
+}
+main { width: 100%; max-width: 560px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
+h2 { font-size: 1.35rem; line-height: 1.3; margin: 8px 0 20px; }
+.intro, .count, .film { color: var(--muted); }
+.count { font-size: .9rem; margin: 0; }
+button {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+}
+.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.secondary { background: transparent; color: var(--ink); }
+.answers { display: grid; gap: 10px; }
+.answer {
+  text-align: left;
+  background: var(--card);
+  color: var(--ink);
+  transition: border-color .15s, transform .15s;
+}
+.answer:hover, .answer:focus-visible { border-color: var(--accent); transform: translateY(-1px); }
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin-bottom: 20px; }
+.bar { height: 100%; background: var(--accent); transition: width .25s; }
+.result { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 16px; }
+.result img { width: 100%; border-radius: 12px; margin: 8px 0; }
+.row { display: flex; gap: 10px; }
