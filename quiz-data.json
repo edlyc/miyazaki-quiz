@@ -1,0 +1,3217 @@
+{
+  "title": "Which Miyazaki Character Are You?",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "You're part of a small group dealing with a difficult situation. Everyone is stressed, nobody is entirely sure what to do, and you realize you probably understand the situation better than most of the others. What happens inside you first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I immediately start figuring out what needs to happen. The uncertainty bothers me less once I have a plan.",
+          "signals": {
+            "ac": 1,
+            "sk": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become very aware of everyone else's emotional state and start tracking who is frightened, upset, withdrawing, or likely to cause a problem.",
+          "signals": {
+            "at": 1,
+            "hv": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I feel irritated that nobody else seems to be seeing what feels obvious to me, though I may not show it.",
+          "signals": {
+            "re": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I instinctively hang back for a moment. I want to understand the whole situation before I influence what happens.",
+          "signals": {
+            "in": 1,
+            "hv": 1,
+            "ac": -1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I feel a surge of responsibility. Even if I never agreed to be responsible, it now feels difficult not to take care of the situation.",
+          "signals": {
+            "ca": 1,
+            "ov": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Someone you care about is clearly upset with you, but they say, ‘I'm fine,’ and refuse to explain. What is your most natural reaction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I keep gently checking in. I have a hard time leaving emotional tension unresolved when I know something is wrong.",
+          "signals": {
+            "at": 1,
+            "rs": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I give them space, but I'm internally preoccupied with it until we talk.",
+          "signals": {
+            "rs": 1,
+            "hv": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I get frustrated. If something is wrong, I want them to tell me directly rather than make me guess.",
+          "signals": {
+            "dr": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I assume they'll come to me when they're ready and mostly go on with my day.",
+          "signals": {
+            "bd": 1,
+            "rs": -1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I start mentally reviewing what I might have done wrong, even before I know whether I actually did anything.",
+          "signals": {
+            "sc": 1,
+            "hv": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I withdraw too. If they are shutting me out, I'm unlikely to keep reaching.",
+          "signals": {
+            "wd": 1,
+            "bd": 1,
+            "pr": -1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "You make a mistake that disappoints someone whose opinion matters a lot to you. Which reaction feels most familiar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I want to repair it quickly and prove through action that I can do better.",
+          "signals": {
+            "pc": 1,
+            "ov": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I feel shame more than guilt; the mistake starts to feel like evidence of something flawed about me.",
+          "signals": {
+            "sc": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I become defensive at first, especially if I think their disappointment is exaggerated or unfair.",
+          "signals": {
+            "re": 1,
+            "ju": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I replay the situation repeatedly, trying to understand exactly where I went wrong.",
+          "signals": {
+            "in": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I can own the mistake fairly directly, but I need some distance before I can talk about it well.",
+          "signals": {
+            "bd": 1,
+            "wd": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become unusually accommodating afterward, almost trying to compensate for having let them down.",
+          "signals": {
+            "ov": 1,
+            "rs": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "You have been carrying a lot for a while—responsibilities, other people's needs, your own stress—and then one relatively small thing goes wrong. What are you most likely to do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Keep functioning until I am alone, then fall apart privately.",
+          "signals": {
+            "ov": 1,
+            "wd": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Get disproportionately irritated over the small thing, even if I know it is not really about that.",
+          "signals": {
+            "re": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Become more controlling and particular because I need something to feel manageable.",
+          "signals": {
+            "ct": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Go emotionally flat. I stop feeling much of anything until I have enough space to recover.",
+          "signals": {
+            "wd": 1,
+            "re": -1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Reach for someone I trust and want comfort, reassurance, or help regulating.",
+          "signals": {
+            "rs": 1,
+            "wd": -1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Double down and become even more competent. Falling apart feels like a luxury I do not have.",
+          "signals": {
+            "ov": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "A person you love is making a choice you strongly believe will hurt them. What is your instinct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Say what I think clearly, then respect that it is ultimately their life.",
+          "signals": {
+            "dr": 1,
+            "bd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Keep trying to persuade them because I would feel partly responsible if I saw the danger and did nothing.",
+          "signals": {
+            "ca": 1,
+            "ov": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Support them emotionally even if I disagree with the choice; preserving the relationship matters more than being right.",
+          "signals": {
+            "at": 1,
+            "pr": 1,
+            "ju": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Get frustrated or angry because it is hard to watch someone ignore what seems obvious to me.",
+          "signals": {
+            "re": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Step back. I may care deeply, but I do not want to become entangled in consequences that are not mine.",
+          "signals": {
+            "bd": 1,
+            "au": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Quietly start preparing for what they may need if it goes badly.",
+          "signals": {
+            "pc": 1,
+            "ca": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "You enter a new environment where you know almost no one. Nobody is overtly unkind, but you cannot yet tell where you fit. What tends to happen naturally?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I become observant and somewhat restrained until I understand the social landscape.",
+          "signals": {
+            "in": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I make myself useful. Having a role or being helpful makes it easier for me to feel secure.",
+          "signals": {
+            "sk": 1,
+            "ov": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I actively connect with people and usually find my footing through conversation.",
+          "signals": {
+            "co": 1,
+            "dr": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become more self-conscious than I would like and monitor how I am coming across.",
+          "signals": {
+            "sc": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I look for one person I genuinely connect with rather than trying to belong to the whole group.",
+          "signals": {
+            "at": 1,
+            "pr": 1,
+            "co": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I am fairly comfortable being on the outside for a while. I do not need immediate belonging.",
+          "signals": {
+            "au": 1,
+            "rs": -1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "You are angry with someone you love, and you believe your anger is justified. Which pattern is most familiar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I want to address it directly. The longer it sits unresolved, the more distressed I become.",
+          "signals": {
+            "dr": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I initially minimize my anger or try to understand their side, sometimes to the point that I lose track of what I actually feel.",
+          "signals": {
+            "ca": 1,
+            "at": 1,
+            "re": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I become colder and more distant. I need the other person to recognize that something has changed before I can soften.",
+          "signals": {
+            "wd": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I can become intensely expressive—sharp, emotional, or forceful—and then often feel guilty about how strongly I reacted.",
+          "signals": {
+            "re": 1,
+            "sc": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I am more comfortable being angry on someone else’s behalf than on my own. When I am the one who was hurt, anger often turns into sadness, anxiety, or self-questioning.",
+          "signals": {
+            "ca": 1,
+            "sc": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I hold it in until I am certain I am entitled to be angry. By that point, I may have accumulated much more resentment than the immediate situation warrants.",
+          "signals": {
+            "wd": 1,
+            "sc": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "When you feel insecure in a close relationship, which impulse is strongest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I want reassurance, but I may struggle to ask for it directly.",
+          "signals": {
+            "rs": 1,
+            "dr": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become more attentive to the other person—tone, behavior, responsiveness, small changes—and try to figure out what they mean.",
+          "signals": {
+            "hv": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I pull back emotionally so I cannot be caught needing someone more than they need me.",
+          "signals": {
+            "wd": 1,
+            "bd": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become more accommodating or helpful, almost as if being especially good to them will make the relationship feel safer.",
+          "signals": {
+            "ov": 1,
+            "pc": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I want to talk about it immediately and get clarity, even if the conversation is uncomfortable.",
+          "signals": {
+            "dr": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I tell myself I'm overreacting and try to suppress the insecurity until I can make sense of it privately.",
+          "signals": {
+            "sc": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "I become angry or critical because vulnerability feels harder to tolerate than irritation.",
+          "signals": {
+            "re": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "You are given a major responsibility that matters deeply to you, but you are not fully confident you can handle it. What is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I become highly conscientious and prepare far more than anyone expects.",
+          "signals": {
+            "sk": 1,
+            "sc": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I feel anxious, but the responsibility itself activates me. Once I am needed, I usually rise to it.",
+          "signals": {
+            "ac": 1,
+            "ov": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I hesitate or procrastinate because the possibility of failing at something meaningful feels overwhelming.",
+          "signals": {
+            "sc": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I tell myself I can handle it and push forward, even if I am privately terrified.",
+          "signals": {
+            "ac": 1,
+            "sk": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I look for someone more experienced to help me orient myself before I commit fully.",
+          "signals": {
+            "in": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become preoccupied with how my performance will affect other people more than with whether I personally succeed.",
+          "signals": {
+            "ca": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "When you are hurt by someone, what most determines whether you can forgive them?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whether they genuinely understand the impact of what they did.",
+          "signals": {
+            "at": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Whether they take responsibility without making excuses.",
+          "signals": {
+            "ju": 1,
+            "dr": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Whether I believe they meant to hurt me.",
+          "signals": {
+            "in": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Whether their behavior actually changes afterward.",
+          "signals": {
+            "ac": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Whether I still feel emotionally safe with them.",
+          "signals": {
+            "pr": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Whether I can make sense of why they did it.",
+          "signals": {
+            "in": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "I can forgive fairly easily, but trusting them again is a separate question.",
+          "signals": {
+            "ca": 1,
+            "bd": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "You are in a situation where everyone expects you to go along with something, but internally you feel that it is wrong. What are you most likely to do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Speak up immediately, even if it creates conflict.",
+          "signals": {
+            "ju": 1,
+            "ac": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "First test whether I am reading the situation correctly, then speak if I still believe it is wrong.",
+          "signals": {
+            "in": 1,
+            "ju": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Go along outwardly at first, but feel increasingly distressed or resentful.",
+          "signals": {
+            "wd": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Find a quieter way to resist or undermine the decision rather than confront the group directly.",
+          "signals": {
+            "au": 1,
+            "in": 1,
+            "dr": -1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I am strongly influenced by whether someone more vulnerable could be harmed. If so, I am much more likely to intervene.",
+          "signals": {
+            "ca": 1,
+            "ju": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I may comply in the moment if I feel trapped, then replay it afterward and wish I had acted differently.",
+          "signals": {
+            "sc": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "When someone you love is struggling badly, what is hardest for you to tolerate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feeling helpless because there is nothing concrete I can do to fix it.",
+          "signals": {
+            "ca": 1,
+            "pc": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Watching them withdraw from me or shut me out.",
+          "signals": {
+            "rs": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Seeing them make the same painful mistake repeatedly.",
+          "signals": {
+            "ct": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Feeling that they are suffering alone, even if they say they want space.",
+          "signals": {
+            "at": 1,
+            "ca": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Realizing that supporting them may require me to set aside my own needs for a while.",
+          "signals": {
+            "bd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Being asked to help when I am already depleted and then feeling guilty for resenting it.",
+          "signals": {
+            "ov": 1,
+            "sc": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Seeing them lose hope in themselves.",
+          "signals": {
+            "ca": 1,
+            "wo": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "You have been misunderstood in a way that feels unfair and personally significant. What bothers you most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "That they formed an inaccurate picture of who I am.",
+          "signals": {
+            "in": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "That they did not give me the benefit of the doubt.",
+          "signals": {
+            "ju": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "That I may not be able to correct the misunderstanding.",
+          "signals": {
+            "ct": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "That someone I care about could think poorly of me.",
+          "signals": {
+            "rs": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "That I was not able to explain myself clearly enough.",
+          "signals": {
+            "dr": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "That their interpretation may affect how other people see or treat me.",
+          "signals": {
+            "hv": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "Suppose someone gives you sincere criticism about a trait or pattern you have. Part of you suspects they may be right, but hearing it is painful. What tends to happen first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I immediately start analyzing whether it is true and looking for evidence.",
+          "signals": {
+            "in": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I feel exposed or ashamed, even if I stay composed externally.",
+          "signals": {
+            "sc": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I explain the context behind my behavior because I need them to understand why I acted that way.",
+          "signals": {
+            "dr": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become defensive internally, but later revisit it privately and may ultimately agree.",
+          "signals": {
+            "re": 1,
+            "in": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I focus on changing the behavior fairly quickly. Doing something about it helps me tolerate the discomfort.",
+          "signals": {
+            "ac": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become preoccupied with whether this criticism changes how they see me overall.",
+          "signals": {
+            "rs": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "I can usually separate “I did something poorly” from “there is something wrong with me,” so criticism is uncomfortable but manageable.",
+          "signals": {
+            "sc": -1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "prompt": "You discover that someone you trusted has withheld something important from you. They insist they did it to protect you, not to deceive you. What matters most in how you respond?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The fact that they took away my ability to decide for myself.",
+          "signals": {
+            "au": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Whether their motive was genuinely protective or self-serving.",
+          "signals": {
+            "in": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Whether the withheld information actually caused harm.",
+          "signals": {
+            "ju": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Whether this was an isolated mistake or evidence that I cannot trust them generally.",
+          "signals": {
+            "hv": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Whether they can explain their reasoning in a way that makes sense to me.",
+          "signals": {
+            "in": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I would be angry regardless. Good intentions do not justify withholding important information.",
+          "signals": {
+            "re": 1,
+            "au": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "prompt": "When you are overwhelmed emotionally, which description is closest to what happens to your sense of self?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I still know who I am, but I lose confidence in my judgment.",
+          "signals": {
+            "sc": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become much more dependent on how other people are responding to me; their reactions start shaping how I feel about myself.",
+          "signals": {
+            "rs": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I become very self-contained and feel like I have to handle everything alone.",
+          "signals": {
+            "wd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become consumed by the immediate emotion. It is hard to remember that I will feel differently later.",
+          "signals": {
+            "re": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I start questioning my motives, behavior, and character and can become intensely self-scrutinizing.",
+          "signals": {
+            "sc": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I detach from myself somewhat. I function, but I feel less emotionally present or connected.",
+          "signals": {
+            "wd": 1,
+            "re": -1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "prompt": "Which kind of loss would be hardest for you to recover from?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Losing a person who made me feel deeply known.",
+          "signals": {
+            "pr": 1,
+            "at": 1,
+            "co": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Losing a sense of purpose or usefulness.",
+          "signals": {
+            "sk": 1,
+            "ac": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Losing trust in someone I had believed was safe.",
+          "signals": {
+            "hv": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Losing a place, community, or way of life that made me feel anchored.",
+          "signals": {
+            "co": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Losing freedom or the ability to choose my own direction.",
+          "signals": {
+            "au": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Losing faith in myself—feeling that I had become someone I did not respect.",
+          "signals": {
+            "ju": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "prompt": "You are in conflict with someone who has more power than you do. You believe they are wrong, but challenging them could cost you something real. What do you tend to do?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Confront them directly anyway. If the issue matters enough, the cost is secondary.",
+          "signals": {
+            "ju": 1,
+            "ac": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Gather information, allies, or leverage first, then challenge them from a stronger position.",
+          "signals": {
+            "in": 1,
+            "ac": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Try to influence them indirectly without making the conflict explicit.",
+          "signals": {
+            "in": 1,
+            "dr": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Comply outwardly while quietly protecting myself and planning an exit.",
+          "signals": {
+            "au": 1,
+            "wd": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I become highly anxious and may freeze temporarily, even if I eventually act.",
+          "signals": {
+            "hv": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I am much more willing to take the risk if someone else is being harmed than if the harm is primarily to me.",
+          "signals": {
+            "ca": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "prompt": "When you feel jealous, envious, or threatened by comparison, what is most likely to happen internally?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I turn it inward and start evaluating what I am lacking.",
+          "signals": {
+            "sc": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become more competitive and want to prove myself.",
+          "signals": {
+            "ac": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I feel ashamed of the feeling itself and try to suppress it.",
+          "signals": {
+            "sc": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become more distant from the person I am comparing myself to.",
+          "signals": {
+            "wd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I can usually identify the underlying desire pretty quickly and use the feeling as information.",
+          "signals": {
+            "in": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become preoccupied with whether the comparison means I am less valued, less lovable, or less important.",
+          "signals": {
+            "rs": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "I rarely experience much jealousy or envy.",
+          "signals": {
+            "sc": -1,
+            "rs": -1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "prompt": "You are responsible for something important, and another person is doing their part in a way that feels sloppy, unreliable, or below the standard you think the situation requires. What is your most natural reaction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I quietly compensate for them because I care more about the outcome than about making a point.",
+          "signals": {
+            "ov": 1,
+            "sk": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become irritated and take over more than I should.",
+          "signals": {
+            "re": 1,
+            "ct": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I address it directly and try to clarify expectations before stepping in.",
+          "signals": {
+            "dr": 1,
+            "sk": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I lower my expectations of them and mentally reassign responsibility.",
+          "signals": {
+            "bd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I worry I am being too demanding, so I tolerate it longer than I probably should.",
+          "signals": {
+            "sc": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become anxious because their unreliability makes me feel like I cannot safely relax.",
+          "signals": {
+            "hv": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "prompt": "When someone you care about is upset with you and you genuinely believe you did nothing wrong, which reaction feels most natural?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I still feel an urge to repair the tension, even if I do not think I owe an apology.",
+          "signals": {
+            "rs": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I become very focused on explaining my perspective so they understand why I acted as I did.",
+          "signals": {
+            "dr": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I can tolerate their disappointment and wait for them to work through it.",
+          "signals": {
+            "bd": 1,
+            "rs": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I start doubting myself anyway and wonder if I am missing something.",
+          "signals": {
+            "sc": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I become frustrated that their feelings are creating a problem I do not believe I caused.",
+          "signals": {
+            "re": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I emotionally pull back until they approach me more reasonably.",
+          "signals": {
+            "wd": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "prompt": "You have been pushing yourself hard toward something that matters to you. Then you hit a setback that makes the whole effort feel uncertain. What happens next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I regroup quickly and start looking for another route.",
+          "signals": {
+            "ac": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I take it very personally at first; the setback can feel like evidence that I misjudged myself.",
+          "signals": {
+            "sc": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I become stubbornly determined and work even harder, partly because I refuse to let the setback define the outcome.",
+          "signals": {
+            "ac": 1,
+            "ov": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I withdraw for a while. I need distance before I can decide whether I still want it.",
+          "signals": {
+            "wd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I immediately start analyzing what went wrong and what I can learn from it.",
+          "signals": {
+            "in": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become discouraged less by the failure itself than by the feeling that all my effort may have been wasted.",
+          "signals": {
+            "sc": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "prompt": "You notice that someone close to you is becoming distant, but they have not said anything is wrong. What do you usually do first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I start scanning for changes and trying to infer what happened.",
+          "signals": {
+            "hv": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I ask directly whether something is wrong.",
+          "signals": {
+            "dr": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I give them space, but I stay very aware of the distance.",
+          "signals": {
+            "bd": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become hurt and pull back too.",
+          "signals": {
+            "wd": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I assume they are dealing with something unrelated to me unless I get evidence otherwise.",
+          "signals": {
+            "rs": -1,
+            "hv": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become more attentive or caring toward them in an attempt to restore closeness.",
+          "signals": {
+            "at": 1,
+            "ov": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "prompt": "You realize that someone has been depending on you more than you realized, and you are beginning to feel emotionally burdened by it. What is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I keep showing up because pulling back feels cruel, even if I am getting depleted.",
+          "signals": {
+            "ov": 1,
+            "ca": 1,
+            "bd": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I start setting boundaries fairly quickly once I notice the imbalance.",
+          "signals": {
+            "bd": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I become resentful before I become honest about how much it is costing me.",
+          "signals": {
+            "re": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I worry that setting limits will make them feel abandoned or uncared for.",
+          "signals": {
+            "rs": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I distance myself somewhat before I am able to explain why.",
+          "signals": {
+            "wd": 1,
+            "dr": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I try to solve the underlying problem so they need me less, rather than simply reducing my involvement.",
+          "signals": {
+            "pc": 1,
+            "sk": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "prompt": "Which kind of compliment tends to land most deeply for you?",
+      "options": [
+        {
+          "id": "A",
+          "text": "“You make people feel safe.”",
+          "signals": {
+            "pr": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "“You are incredibly capable.”",
+          "signals": {
+            "sk": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "“You really see people.”",
+          "signals": {
+            "at": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "“You are brave.”",
+          "signals": {
+            "ac": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "“You are different from anyone else I know.”",
+          "signals": {
+            "au": 1,
+            "wo": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "“You have strong principles.”",
+          "signals": {
+            "ju": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "“You make things better just by being there.”",
+          "signals": {
+            "co": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "prompt": "When you sense that someone is trying to control you—emotionally, socially, professionally, or otherwise—what tends to happen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I become openly defiant very quickly.",
+          "signals": {
+            "au": 1,
+            "re": 1,
+            "dr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I feel anxious or constrained first, then start looking for a way to regain autonomy.",
+          "signals": {
+            "au": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I outwardly cooperate while privately deciding they will not actually have control over me.",
+          "signals": {
+            "au": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I start questioning whether I am being unreasonable for resisting.",
+          "signals": {
+            "sc": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I become much colder toward them. Once I perceive manipulation, trust drops sharply.",
+          "signals": {
+            "wd": 1,
+            "hv": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I am willing to tolerate quite a lot of structure or authority as long as I believe the person is fair and competent; what I cannot tolerate is arbitrary control.",
+          "signals": {
+            "ju": 1,
+            "au": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "prompt": "When you think about the parts of yourself you are least proud of, which feels closest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I can become emotionally avoidant when I feel too needed.",
+          "signals": {
+            "wd": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I can become controlling when I feel unsafe or uncertain.",
+          "signals": {
+            "ct": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I can become self-righteous when I strongly believe I am correct.",
+          "signals": {
+            "ct": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I can become overly dependent on reassurance from people I love.",
+          "signals": {
+            "rs": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I can become harsh with myself in ways I would never be with someone else.",
+          "signals": {
+            "sc": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I can become resentful when I give too much and do not feel equally considered.",
+          "signals": {
+            "ov": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "I can become suspicious or hypervigilant and read threat into ambiguity.",
+          "signals": {
+            "hv": 1
+          }
+        },
+        {
+          "id": "H",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "prompt": "When you are deeply disappointed by someone you love, which feels more threatening?",
+      "options": [
+        {
+          "id": "A",
+          "text": "That I misjudged who they were.",
+          "signals": {
+            "in": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "That I mattered less to them than I believed.",
+          "signals": {
+            "rs": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "That I may never be able to trust them in the same way again.",
+          "signals": {
+            "hv": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "That I will have to choose between protecting myself and preserving the relationship.",
+          "signals": {
+            "bd": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "That I ignored signs I should have noticed earlier.",
+          "signals": {
+            "sc": 1,
+            "hv": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "That the disappointment will change me and make me harder or less open.",
+          "signals": {
+            "ca": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "prompt": "You are exhausted, hurt, and under pressure, but someone else still needs something from you. Which reaction is most familiar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I help automatically, then realize afterward how depleted I was.",
+          "signals": {
+            "ov": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I help, but part of me becomes resentful that no one noticed I was struggling too.",
+          "signals": {
+            "ov": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I say no more easily when I am depleted; my capacity becomes very clear to me.",
+          "signals": {
+            "bd": 1,
+            "au": 1,
+            "ov": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become emotionally detached and do the minimum necessary.",
+          "signals": {
+            "wd": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I push through because being useful helps me feel steadier.",
+          "signals": {
+            "ov": 1,
+            "sk": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I want to help, but I can become overwhelmed by the feeling that there is no room for my own needs.",
+          "signals": {
+            "rs": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "prompt": "You are faced with a decision where there is no clean answer. Every option involves some loss, and you cannot make everyone happy. What do you rely on most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "My values. I ask which choice I can still respect myself for afterward.",
+          "signals": {
+            "ju": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Consequences. I try to determine which option causes the least harm overall.",
+          "signals": {
+            "ca": 1,
+            "in": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Loyalty. I prioritize the people or commitments I feel most responsible for.",
+          "signals": {
+            "co": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Intuition. I usually know which choice feels wrong before I can fully explain why.",
+          "signals": {
+            "wo": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Fairness. I try to make sure I am not privileging my own needs simply because they are mine.",
+          "signals": {
+            "ju": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I get stuck trying to find a solution that avoids the loss entirely, even when I know intellectually that one probably does not exist.",
+          "signals": {
+            "ct": 1,
+            "sc": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "prompt": "When you are at your healthiest and most grounded, what changes first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I become more playful and spontaneous.",
+          "signals": {
+            "wo": 1,
+            "re": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I stop monitoring everyone else so closely and trust that other people can carry their own weight.",
+          "signals": {
+            "hv": -1,
+            "ov": -1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I feel more decisive and less afraid of making the wrong choice.",
+          "signals": {
+            "ac": 1,
+            "sc": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become more emotionally open and less guarded about what I need.",
+          "signals": {
+            "pr": 1,
+            "rs": 1,
+            "wd": -1
+          }
+        },
+        {
+          "id": "E",
+          "text": "I feel less urgency to fix, solve, or prevent everything.",
+          "signals": {
+            "ct": -1,
+            "ov": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I become more ambitious because I am no longer spending so much energy managing threat or uncertainty.",
+          "signals": {
+            "ac": 1,
+            "hv": -1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "prompt": "Which experience is most likely to make you feel lonely even when you are surrounded by people?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Feeling responsible for everyone while no one seems to notice what I am carrying.",
+          "signals": {
+            "ov": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Being liked or admired, but not deeply understood.",
+          "signals": {
+            "in": 1,
+            "at": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Feeling emotionally different from the people around me and unable to explain why.",
+          "signals": {
+            "wo": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Being included socially but sensing that the connection is conditional or superficial.",
+          "signals": {
+            "pr": 1,
+            "co": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Realizing I cannot rely on the people around me when something truly matters.",
+          "signals": {
+            "pr": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Feeling like I have to stay composed because there is no one I trust enough to fall apart with.",
+          "signals": {
+            "wd": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "prompt": "When something frightening or destabilizing happens unexpectedly, what is your most immediate instinct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Take action. Doing something gives me a sense of control.",
+          "signals": {
+            "ac": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Scan the environment and other people for clues about what is happening.",
+          "signals": {
+            "hv": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Freeze briefly while my mind catches up, then move once I understand the situation.",
+          "signals": {
+            "hv": 1,
+            "in": 1,
+            "ac": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Find the person I trust most and orient around them.",
+          "signals": {
+            "rs": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Become intensely practical and focus only on what needs to happen next.",
+          "signals": {
+            "ac": 1,
+            "sk": 1,
+            "pc": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "My emotional reaction arrives later; in the moment I am surprisingly functional.",
+          "signals": {
+            "wd": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "prompt": "When someone you love is behaving in a way that hurts you, but you also understand why they are behaving that way, what tends to happen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Understanding their pain makes it much harder for me to stay angry.",
+          "signals": {
+            "ca": 1,
+            "at": 1,
+            "re": -1
+          }
+        },
+        {
+          "id": "B",
+          "text": "I can understand them deeply and still hold the line on what I will accept.",
+          "signals": {
+            "at": 1,
+            "bd": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "I start over-explaining their behavior to myself and may stay in the situation longer than I should.",
+          "signals": {
+            "in": 1,
+            "ov": 1,
+            "bd": -1
+          }
+        },
+        {
+          "id": "D",
+          "text": "I become torn between compassion for them and resentment that I am the one absorbing the consequences.",
+          "signals": {
+            "ca": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Once I feel hurt enough, understanding the reason stops mattering very much.",
+          "signals": {
+            "bd": 1,
+            "wd": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I focus less on why they did it and more on whether they are willing to repair it.",
+          "signals": {
+            "dr": 1,
+            "bd": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "prompt": "What kind of fear has the strongest pull on you?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Becoming trapped in a life that no longer feels like mine.",
+          "signals": {
+            "au": 1,
+            "wo": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Failing someone who truly depends on me.",
+          "signals": {
+            "ov": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Discovering that I cannot trust my own judgment.",
+          "signals": {
+            "sc": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Being abandoned at the moment I most need someone.",
+          "signals": {
+            "rs": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Becoming hardened, cynical, or emotionally numb.",
+          "signals": {
+            "ca": 1,
+            "wo": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Wasting my life on things that do not matter.",
+          "signals": {
+            "wo": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "prompt": "When you realize you have been carrying more than your fair share for a long time, what feeling tends to surface most strongly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Anger that other people let me.",
+          "signals": {
+            "re": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Sadness that no one noticed.",
+          "signals": {
+            "rs": 1,
+            "pr": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Shame that I did not set limits sooner.",
+          "signals": {
+            "sc": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Resentment that I became indispensable and then felt trapped by it.",
+          "signals": {
+            "re": 1,
+            "ov": 1,
+            "au": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Relief at finally admitting I cannot keep doing it.",
+          "signals": {
+            "bd": 1,
+            "ov": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Confusion, because part of me still feels like I should be able to handle it.",
+          "signals": {
+            "sc": 1,
+            "ov": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "prompt": "Which kind of person tends to unsettle you most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Someone emotionally unpredictable, where I never know which version of them I am going to get.",
+          "signals": {
+            "hv": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Someone charming but difficult to read, especially if I sense there is more happening underneath than they are showing.",
+          "signals": {
+            "hv": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Someone domineering who assumes they have the right to decide for other people.",
+          "signals": {
+            "au": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Someone passive who avoids responsibility and leaves other people to deal with the consequences.",
+          "signals": {
+            "sk": 1,
+            "re": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Someone who seems emotionally indifferent to suffering or other people’s needs.",
+          "signals": {
+            "ca": 1,
+            "ju": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "Someone who knows exactly where I am vulnerable and uses it strategically.",
+          "signals": {
+            "hv": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "prompt": "Imagine you are offered a major opportunity that is exciting, meaningful, and could change your life—but accepting it would require stepping into a version of yourself that feels more visible, powerful, or exposed than you are used to. What is your most likely internal reaction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Excitement first. I want to grow into it.",
+          "signals": {
+            "ac": 1,
+            "wo": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Fear that I will be revealed as less capable than people think.",
+          "signals": {
+            "sc": 1,
+            "sk": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Concern about what increased visibility or power might do to me as a person.",
+          "signals": {
+            "ju": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "A strong urge to prepare until I feel completely ready, even if “completely ready” is unrealistic.",
+          "signals": {
+            "sk": 1,
+            "sc": 1,
+            "ct": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "Ambivalence. Part of me wants the opportunity and another part wants the safety of remaining where I am.",
+          "signals": {
+            "hv": 1,
+            "ac": -1
+          }
+        },
+        {
+          "id": "F",
+          "text": "I worry more about the responsibility attached to the opportunity than the opportunity itself.",
+          "signals": {
+            "ov": 1,
+            "ca": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "prompt": "When you are deeply hurt, what do you most want from another person—even if you do not always ask for it directly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To be reassured that they are not going anywhere.",
+          "signals": {
+            "rs": 1,
+            "pr": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "To have them understand exactly why it hurt.",
+          "signals": {
+            "at": 1,
+            "in": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "To be protected from having to manage anything for a while.",
+          "signals": {
+            "pc": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "To be allowed to fall apart without becoming a burden.",
+          "signals": {
+            "pr": 1,
+            "rs": 1
+          }
+        },
+        {
+          "id": "E",
+          "text": "To have them take practical action to make things better.",
+          "signals": {
+            "pc": 1,
+            "ac": 1
+          }
+        },
+        {
+          "id": "F",
+          "text": "To have them stay close without forcing me to talk before I am ready.",
+          "signals": {
+            "pr": 1,
+            "bd": 1
+          }
+        },
+        {
+          "id": "G",
+          "text": "Something else.",
+          "signals": {}
+        }
+      ]
+    }
+  ],
+  "question40": {
+    "id": 40,
+    "prompt": "When you imagine the version of yourself that feels most essentially you—not the most successful, impressive, healed, or socially acceptable version—what qualities are at the center of that person?",
+    "instructions": "Write your own response. For optional automated scoring, select up to three themes that best summarize what you wrote. The text is not analyzed by software."
+  },
+  "themes": [
+    {
+      "id": "protect",
+      "label": "Protect life and alleviate suffering",
+      "signals": {
+        "ca": 1,
+        "ju": 1
+      }
+    },
+    {
+      "id": "understand",
+      "label": "Understand people beneath the surface",
+      "signals": {
+        "in": 1,
+        "at": 1
+      }
+    },
+    {
+      "id": "belong",
+      "label": "Create belonging and shared experiences",
+      "signals": {
+        "co": 1,
+        "pr": 1
+      }
+    },
+    {
+      "id": "freedom",
+      "label": "Live freely and authentically",
+      "signals": {
+        "au": 1,
+        "wo": 1
+      }
+    },
+    {
+      "id": "change",
+      "label": "Challenge injustice and reshape systems",
+      "signals": {
+        "ju": 1,
+        "ac": 1
+      }
+    },
+    {
+      "id": "make",
+      "label": "Build, solve and become highly capable",
+      "signals": {
+        "sk": 1,
+        "ac": 1
+      }
+    },
+    {
+      "id": "beauty",
+      "label": "Preserve beauty, play and wonder",
+      "signals": {
+        "wo": 1,
+        "co": 1
+      }
+    },
+    {
+      "id": "loyalty",
+      "label": "Show up for the people I love",
+      "signals": {
+        "pc": 1,
+        "pr": 1
+      }
+    },
+    {
+      "id": "boundaries",
+      "label": "Balance service with freedom and limits",
+      "signals": {
+        "au": 1,
+        "bd": 1
+      }
+    },
+    {
+      "id": "grow",
+      "label": "Learn, reflect and keep evolving",
+      "signals": {
+        "in": 1,
+        "wo": 1
+      }
+    }
+  ],
+  "traits": {
+    "ca": {
+      "role": "core",
+      "label": "Compassion",
+      "description": "Sensitivity to harm and the impulse to care"
+    },
+    "ju": {
+      "role": "core",
+      "label": "Principled fairness",
+      "description": "Consistency in values and concern for justice"
+    },
+    "ac": {
+      "role": "core",
+      "label": "Practical agency",
+      "description": "Taking action, adapting, moving problems forward"
+    },
+    "au": {
+      "role": "core",
+      "label": "Autonomy",
+      "description": "Protecting agency and freedom from imposed control"
+    },
+    "in": {
+      "role": "core",
+      "label": "Reflective insight",
+      "description": "Analyzing motives, context and complexity"
+    },
+    "co": {
+      "role": "core",
+      "label": "Community",
+      "description": "Belonging, interdependence, shared life"
+    },
+    "wo": {
+      "role": "core",
+      "label": "Meaning & wonder",
+      "description": "Purpose, imagination, beauty, possibility"
+    },
+    "sk": {
+      "role": "core",
+      "label": "Competence & craft",
+      "description": "Capability, preparation and practical skill"
+    },
+    "ov": {
+      "role": "stress",
+      "label": "Overfunctioning",
+      "description": "Taking on too much or staying useful to cope"
+    },
+    "wd": {
+      "role": "stress",
+      "label": "Withdrawal",
+      "description": "Emotional distancing or retreat when threatened"
+    },
+    "re": {
+      "role": "stress",
+      "label": "Reactivity",
+      "description": "Irritability, emotional flooding or sharp expression"
+    },
+    "hv": {
+      "role": "stress",
+      "label": "Vigilance",
+      "description": "Scanning for instability, signs or possible danger"
+    },
+    "sc": {
+      "role": "stress",
+      "label": "Self-criticism",
+      "description": "Shame, retrospective blame and over-scrutiny"
+    },
+    "ct": {
+      "role": "stress",
+      "label": "Control-seeking",
+      "description": "Tightening oversight when things feel uncertain"
+    },
+    "at": {
+      "role": "relational",
+      "label": "Attunement",
+      "description": "Reading and understanding another inner world"
+    },
+    "rs": {
+      "role": "relational",
+      "label": "Reassurance seeking",
+      "description": "Needing signs of safety and continued closeness"
+    },
+    "pc": {
+      "role": "relational",
+      "label": "Practical care",
+      "description": "Supporting people through action and problem solving"
+    },
+    "dr": {
+      "role": "relational",
+      "label": "Direct expression",
+      "description": "Talking about conflict and needs explicitly"
+    },
+    "bd": {
+      "role": "relational",
+      "label": "Boundaries",
+      "description": "Preserving space and distinguishing responsibilities"
+    },
+    "pr": {
+      "role": "relational",
+      "label": "Steady presence",
+      "description": "Offering or valuing reliable, unforced closeness"
+    }
+  },
+  "axisOrder": {
+    "core": [
+      "ca",
+      "ju",
+      "ac",
+      "au",
+      "in",
+      "co",
+      "wo",
+      "sk"
+    ],
+    "stress": [
+      "ov",
+      "wd",
+      "re",
+      "hv",
+      "sc",
+      "ct"
+    ],
+    "relational": [
+      "at",
+      "rs",
+      "pc",
+      "dr",
+      "bd",
+      "pr"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nausicaa",
+      "name": "Nausicaä",
+      "film": "Nausicaä of the Valley of the Wind",
+      "summary": "An ecological empath: protects life, seeks deeper causes of harm, and stays tender without becoming passive.",
+      "core": {
+        "ca": 0.98,
+        "ju": 0.95,
+        "ac": 0.83,
+        "au": 0.72,
+        "in": 0.87,
+        "co": 0.88,
+        "wo": 0.92,
+        "sk": 0.72
+      },
+      "stress": {
+        "ov": 0.91,
+        "wd": 0.4,
+        "re": 0.67,
+        "hv": 0.8,
+        "sc": 0.8,
+        "ct": 0.7
+      },
+      "relational": {
+        "at": 0.96,
+        "rs": 0.82,
+        "pc": 0.82,
+        "dr": 0.58,
+        "bd": 0.62,
+        "pr": 0.9
+      }
+    },
+    {
+      "id": "ashitaka",
+      "name": "Ashitaka",
+      "film": "Princess Mononoke",
+      "summary": "A principled, practical mediator who sees competing truths and acts without surrendering his autonomy.",
+      "core": {
+        "ca": 0.79,
+        "ju": 0.96,
+        "ac": 0.95,
+        "au": 0.94,
+        "in": 0.9,
+        "co": 0.76,
+        "wo": 0.78,
+        "sk": 0.91
+      },
+      "stress": {
+        "ov": 0.58,
+        "wd": 0.64,
+        "re": 0.53,
+        "hv": 0.56,
+        "sc": 0.61,
+        "ct": 0.47
+      },
+      "relational": {
+        "at": 0.76,
+        "rs": 0.58,
+        "pc": 0.93,
+        "dr": 0.89,
+        "bd": 0.87,
+        "pr": 0.85
+      }
+    },
+    {
+      "id": "sophie",
+      "name": "Sophie Hatter",
+      "film": "Howl’s Moving Castle",
+      "summary": "A quietly resilient maker of home who cares through perceptiveness and dependable acts.",
+      "core": {
+        "ca": 0.9,
+        "ju": 0.75,
+        "ac": 0.72,
+        "au": 0.55,
+        "in": 0.8,
+        "co": 0.82,
+        "wo": 0.79,
+        "sk": 0.84
+      },
+      "stress": {
+        "ov": 0.85,
+        "wd": 0.47,
+        "re": 0.46,
+        "hv": 0.56,
+        "sc": 0.72,
+        "ct": 0.5
+      },
+      "relational": {
+        "at": 0.97,
+        "rs": 0.78,
+        "pc": 0.95,
+        "dr": 0.55,
+        "bd": 0.67,
+        "pr": 0.98
+      }
+    },
+    {
+      "id": "pazu",
+      "name": "Pazu",
+      "film": "Castle in the Sky",
+      "summary": "A hands-on, loyal optimist who makes partnership an adventure and turns care into action.",
+      "core": {
+        "ca": 0.77,
+        "ju": 0.79,
+        "ac": 0.96,
+        "au": 0.7,
+        "in": 0.61,
+        "co": 0.88,
+        "wo": 0.91,
+        "sk": 0.92
+      },
+      "stress": {
+        "ov": 0.71,
+        "wd": 0.26,
+        "re": 0.48,
+        "hv": 0.43,
+        "sc": 0.53,
+        "ct": 0.42
+      },
+      "relational": {
+        "at": 0.76,
+        "rs": 0.58,
+        "pc": 0.99,
+        "dr": 0.79,
+        "bd": 0.72,
+        "pr": 0.98
+      }
+    },
+    {
+      "id": "kiki",
+      "name": "Kiki",
+      "film": "Kiki’s Delivery Service",
+      "summary": "A conscientious independent whose confidence is intertwined with competence and meaningful contribution.",
+      "core": {
+        "ca": 0.72,
+        "ju": 0.7,
+        "ac": 0.78,
+        "au": 0.85,
+        "in": 0.67,
+        "co": 0.65,
+        "wo": 0.92,
+        "sk": 0.95
+      },
+      "stress": {
+        "ov": 0.98,
+        "wd": 0.67,
+        "re": 0.54,
+        "hv": 0.73,
+        "sc": 0.97,
+        "ct": 0.75
+      },
+      "relational": {
+        "at": 0.7,
+        "rs": 0.83,
+        "pc": 0.91,
+        "dr": 0.59,
+        "bd": 0.41,
+        "pr": 0.74
+      }
+    },
+    {
+      "id": "porco",
+      "name": "Porco Rosso",
+      "film": "Porco Rosso",
+      "summary": "A principled but guarded independent: resourceful, skeptical, and protective of freedom.",
+      "core": {
+        "ca": 0.58,
+        "ju": 0.78,
+        "ac": 0.85,
+        "au": 0.99,
+        "in": 0.83,
+        "co": 0.51,
+        "wo": 0.64,
+        "sk": 0.95
+      },
+      "stress": {
+        "ov": 0.43,
+        "wd": 0.99,
+        "re": 0.92,
+        "hv": 0.69,
+        "sc": 0.65,
+        "ct": 0.48
+      },
+      "relational": {
+        "at": 0.46,
+        "rs": 0.37,
+        "pc": 0.78,
+        "dr": 0.69,
+        "bd": 0.98,
+        "pr": 0.57
+      }
+    },
+    {
+      "id": "san",
+      "name": "San",
+      "film": "Princess Mononoke",
+      "summary": "A fiercely loyal protector whose protective anger and distrust of power run deep.",
+      "core": {
+        "ca": 0.83,
+        "ju": 0.96,
+        "ac": 0.94,
+        "au": 0.92,
+        "in": 0.52,
+        "co": 0.71,
+        "wo": 0.69,
+        "sk": 0.74
+      },
+      "stress": {
+        "ov": 0.65,
+        "wd": 0.89,
+        "re": 0.98,
+        "hv": 0.96,
+        "sc": 0.5,
+        "ct": 0.76
+      },
+      "relational": {
+        "at": 0.65,
+        "rs": 0.39,
+        "pc": 0.75,
+        "dr": 0.62,
+        "bd": 0.89,
+        "pr": 0.72
+      }
+    },
+    {
+      "id": "howl",
+      "name": "Howl",
+      "film": "Howl’s Moving Castle",
+      "summary": "A sensitive, imaginative independent capable of devotion but prone to avoidance under pressure.",
+      "core": {
+        "ca": 0.66,
+        "ju": 0.65,
+        "ac": 0.63,
+        "au": 0.97,
+        "in": 0.84,
+        "co": 0.44,
+        "wo": 0.98,
+        "sk": 0.88
+      },
+      "stress": {
+        "ov": 0.42,
+        "wd": 0.97,
+        "re": 0.9,
+        "hv": 0.63,
+        "sc": 0.76,
+        "ct": 0.7
+      },
+      "relational": {
+        "at": 0.82,
+        "rs": 0.86,
+        "pc": 0.69,
+        "dr": 0.42,
+        "bd": 0.9,
+        "pr": 0.61
+      }
+    },
+    {
+      "id": "chihiro",
+      "name": "Chihiro",
+      "film": "Spirited Away",
+      "summary": "An initially frightened but steadily courageous observer who grows through empathy and responsibility.",
+      "core": {
+        "ca": 0.9,
+        "ju": 0.81,
+        "ac": 0.81,
+        "au": 0.58,
+        "in": 0.83,
+        "co": 0.8,
+        "wo": 0.88,
+        "sk": 0.64
+      },
+      "stress": {
+        "ov": 0.83,
+        "wd": 0.55,
+        "re": 0.61,
+        "hv": 0.9,
+        "sc": 0.73,
+        "ct": 0.5
+      },
+      "relational": {
+        "at": 0.91,
+        "rs": 0.81,
+        "pc": 0.82,
+        "dr": 0.7,
+        "bd": 0.62,
+        "pr": 0.93
+      }
+    },
+    {
+      "id": "eboshi",
+      "name": "Lady Eboshi",
+      "film": "Princess Mononoke",
+      "summary": "A powerful builder of community who blends tangible care with uncompromising executive control.",
+      "core": {
+        "ca": 0.66,
+        "ju": 0.73,
+        "ac": 0.98,
+        "au": 0.78,
+        "in": 0.81,
+        "co": 0.88,
+        "wo": 0.56,
+        "sk": 0.99
+      },
+      "stress": {
+        "ov": 0.82,
+        "wd": 0.45,
+        "re": 0.77,
+        "hv": 0.4,
+        "sc": 0.47,
+        "ct": 0.97
+      },
+      "relational": {
+        "at": 0.58,
+        "rs": 0.44,
+        "pc": 0.94,
+        "dr": 0.94,
+        "bd": 0.91,
+        "pr": 0.66
+      }
+    },
+    {
+      "id": "sheeta",
+      "name": "Sheeta",
+      "film": "Castle in the Sky",
+      "summary": "A gentle but steadfast protector who values connection and resists corrupt uses of power.",
+      "core": {
+        "ca": 0.95,
+        "ju": 0.88,
+        "ac": 0.77,
+        "au": 0.72,
+        "in": 0.76,
+        "co": 0.79,
+        "wo": 0.86,
+        "sk": 0.73
+      },
+      "stress": {
+        "ov": 0.78,
+        "wd": 0.55,
+        "re": 0.52,
+        "hv": 0.74,
+        "sc": 0.78,
+        "ct": 0.5
+      },
+      "relational": {
+        "at": 0.97,
+        "rs": 0.76,
+        "pc": 0.82,
+        "dr": 0.73,
+        "bd": 0.7,
+        "pr": 0.96
+      }
+    },
+    {
+      "id": "satsuki",
+      "name": "Satsuki",
+      "film": "My Neighbor Totoro",
+      "summary": "A warm, capable caregiver whose steadiness often masks the burdens she assumes.",
+      "core": {
+        "ca": 0.88,
+        "ju": 0.72,
+        "ac": 0.87,
+        "au": 0.53,
+        "in": 0.61,
+        "co": 0.96,
+        "wo": 0.85,
+        "sk": 0.96
+      },
+      "stress": {
+        "ov": 0.96,
+        "wd": 0.43,
+        "re": 0.54,
+        "hv": 0.68,
+        "sc": 0.71,
+        "ct": 0.64
+      },
+      "relational": {
+        "at": 0.87,
+        "rs": 0.65,
+        "pc": 0.98,
+        "dr": 0.67,
+        "bd": 0.58,
+        "pr": 0.96
+      }
+    },
+    {
+      "id": "jiro",
+      "name": "Jiro Horikoshi",
+      "film": "The Wind Rises",
+      "summary": "A devoted craftsman pulled between beauty, ambition, and the moral cost of work.",
+      "core": {
+        "ca": 0.58,
+        "ju": 0.67,
+        "ac": 0.94,
+        "au": 0.75,
+        "in": 0.95,
+        "co": 0.51,
+        "wo": 0.97,
+        "sk": 0.99
+      },
+      "stress": {
+        "ov": 0.91,
+        "wd": 0.71,
+        "re": 0.36,
+        "hv": 0.62,
+        "sc": 0.93,
+        "ct": 0.68
+      },
+      "relational": {
+        "at": 0.66,
+        "rs": 0.52,
+        "pc": 0.82,
+        "dr": 0.59,
+        "bd": 0.78,
+        "pr": 0.72
+      }
+    },
+    {
+      "id": "mahito",
+      "name": "Mahito Maki",
+      "film": "The Boy and the Heron",
+      "summary": "A grieving, guarded seeker who makes difficult meaning through experience rather than easy answers.",
+      "core": {
+        "ca": 0.72,
+        "ju": 0.76,
+        "ac": 0.84,
+        "au": 0.86,
+        "in": 0.92,
+        "co": 0.51,
+        "wo": 0.87,
+        "sk": 0.65
+      },
+      "stress": {
+        "ov": 0.47,
+        "wd": 0.96,
+        "re": 0.69,
+        "hv": 0.83,
+        "sc": 0.86,
+        "ct": 0.55
+      },
+      "relational": {
+        "at": 0.71,
+        "rs": 0.56,
+        "pc": 0.6,
+        "dr": 0.45,
+        "bd": 0.81,
+        "pr": 0.69
+      }
+    },
+    {
+      "id": "haku",
+      "name": "Haku",
+      "film": "Spirited Away",
+      "summary": "A protective, self-controlled guide whose devotion is expressed in calm action.",
+      "core": {
+        "ca": 0.83,
+        "ju": 0.75,
+        "ac": 0.83,
+        "au": 0.63,
+        "in": 0.78,
+        "co": 0.62,
+        "wo": 0.66,
+        "sk": 0.84
+      },
+      "stress": {
+        "ov": 0.86,
+        "wd": 0.82,
+        "re": 0.42,
+        "hv": 0.58,
+        "sc": 0.64,
+        "ct": 0.65
+      },
+      "relational": {
+        "at": 0.75,
+        "rs": 0.55,
+        "pc": 0.93,
+        "dr": 0.73,
+        "bd": 0.79,
+        "pr": 0.95
+      }
+    },
+    {
+      "id": "fio",
+      "name": "Fio Piccolo",
+      "film": "Porco Rosso",
+      "summary": "An inventive, courageous collaborator who meets doubt with skilled action and directness.",
+      "core": {
+        "ca": 0.76,
+        "ju": 0.74,
+        "ac": 0.99,
+        "au": 0.88,
+        "in": 0.78,
+        "co": 0.81,
+        "wo": 0.86,
+        "sk": 0.98
+      },
+      "stress": {
+        "ov": 0.75,
+        "wd": 0.32,
+        "re": 0.6,
+        "hv": 0.45,
+        "sc": 0.55,
+        "ct": 0.47
+      },
+      "relational": {
+        "at": 0.74,
+        "rs": 0.52,
+        "pc": 0.98,
+        "dr": 0.94,
+        "bd": 0.76,
+        "pr": 0.91
+      }
+    },
+    {
+      "id": "ponyo",
+      "name": "Ponyo",
+      "film": "Ponyo",
+      "summary": "An exuberant seeker of love and freedom who embraces experience with little hesitation.",
+      "core": {
+        "ca": 0.9,
+        "ju": 0.67,
+        "ac": 0.97,
+        "au": 0.94,
+        "in": 0.41,
+        "co": 0.82,
+        "wo": 0.99,
+        "sk": 0.43
+      },
+      "stress": {
+        "ov": 0.38,
+        "wd": 0.23,
+        "re": 0.85,
+        "hv": 0.25,
+        "sc": 0.18,
+        "ct": 0.36
+      },
+      "relational": {
+        "at": 0.82,
+        "rs": 0.96,
+        "pc": 0.71,
+        "dr": 0.93,
+        "bd": 0.43,
+        "pr": 0.93
+      }
+    },
+    {
+      "id": "lisa",
+      "name": "Lisa",
+      "film": "Ponyo",
+      "summary": "A direct, resourceful parent who responds to trouble with practical care and fierce loyalty.",
+      "core": {
+        "ca": 0.88,
+        "ju": 0.79,
+        "ac": 0.98,
+        "au": 0.81,
+        "in": 0.63,
+        "co": 0.9,
+        "wo": 0.79,
+        "sk": 0.96
+      },
+      "stress": {
+        "ov": 0.87,
+        "wd": 0.4,
+        "re": 0.78,
+        "hv": 0.63,
+        "sc": 0.56,
+        "ct": 0.79
+      },
+      "relational": {
+        "at": 0.81,
+        "rs": 0.66,
+        "pc": 0.99,
+        "dr": 0.93,
+        "bd": 0.72,
+        "pr": 0.92
+      }
+    }
+  ],
+  "scoring": {
+    "coreWeight": 0.55,
+    "stressWeight": 0.2,
+    "relationalWeight": 0.25,
+    "themeWeight": 2,
+    "maximumSelections": 4,
+    "minimumAnswered": 25
+  }
+}
